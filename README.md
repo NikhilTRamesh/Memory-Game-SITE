@@ -40,12 +40,15 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 GIF of all buttons being clicked:
+
 ![](https://media4.giphy.com/media/TNa71ZeSXT72QDHKQy/giphy.gif)
 
 GIF of start and stop button functionality + game loss:
+
 ![](https://media1.giphy.com/media/lncDphffGtmVAenvX4/giphy.gif)
 
 GIF of win after user repeats back all 8 clues:
+
 ![](https://media2.giphy.com/media/JpgJcMPvw4xtgfHbgi/giphy.gif)
 
 
