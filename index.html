@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hello!</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <h1>Light and Sound Memory Game</h1>
+    
+    <p>
+      Pay attention to the pattern and repeat all eight steps in order to win!
+    </p>
+    <button id="startBtn" onclick="startGame()">
+      Start
+    </button>
+    <button id="endBtn" class="hidden" onclick="endGame()">
+      Stop
+    </button>
+    
+    <div id="gameButtonArea">
+      <button id="button1" onclick="guess(1)" onmousedown="startTone(1); displayImg(1)" onmouseup="stopTone(); hideImg(1)"> <img id="toggle1" class = "hidden" src="https://cdn.glitch.com/1864211a-8070-451d-b0f4-167517c567ea%2Fsmilebutton.png?v=1616357034394"> 
+      </button>
+      <button id="button2" onclick="guess(2)" onmousedown="startTone(2); displayImg(2)" onmouseup="stopTone(); hideImg(2)"> <img id = "toggle2" class = "hidden" src="https://cdn.glitch.com/1864211a-8070-451d-b0f4-167517c567ea%2Fsmilebutton.png?v=1616357034394">
+      </button>
+      <button id="button3" onclick="guess(3)" onmousedown="startTone(3); displayImg(3)" onmouseup="stopTone(); hideImg(3)"> <img id = "toggle3" class = "hidden" src="https://cdn.glitch.com/1864211a-8070-451d-b0f4-167517c567ea%2Fsmilebutton.png?v=1616357034394">
+      </button>
+      <button id="button4" onclick="guess(4)" onmousedown="startTone(4); displayImg(4)" onmouseup="stopTone(); hideImg(4)"> <img id = "toggle4" class = "hidden" src="https://cdn.glitch.com/1864211a-8070-451d-b0f4-167517c567ea%2Fsmilebutton.png?v=1616357034394">
+      </button>
+      <button id="button5" onclick="guess(5)" onmousedown="startTone(5); displayImg(5)" onmouseup="stopTone(); hideImg(5)"> <img id = "toggle5" class = "hidden" src="https://cdn.glitch.com/1864211a-8070-451d-b0f4-167517c567ea%2Fsmilebutton.png?v=1616357034394">
+      </button>
+    </div>
+    <audio src="e4.mp3" id="audio1"></audio>
+    <audio src="f4.mp3" id="audio2"></audio>
+    <audio src="g4.mp3" id="audio3"></audio>
+    <audio src="a4.mp3" id="audio4"></audio>
+    <audio src="b4.mp3" id="audio5"></audio>
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js" defer></script>
+  </body>
+</html>
